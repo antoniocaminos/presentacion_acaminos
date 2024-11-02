@@ -25,3 +25,21 @@ function pedirNombre () {
     let nombre = prompt('Cual es tu nombre?')
     alert('Hola ' + nombre + ', Estas disfutando la clase?')
 }
+/* cambiar estilos con css y bootstrap */
+let estiloActual = 0; // Estado inicial sin estilos
+
+function alternarEstilos() {
+    const hojaEstilo = document.getElementById("stylesheet");
+
+    // Alterna entre sin estilo (0), estilo personalizado (1), y Bootstrap (2)
+    if (estiloActual === 0) {
+        hojaEstilo.href = "estilo-personalizado.css";
+        estiloActual = 1;
+    } else if (estiloActual === 1) {
+        hojaEstilo.href = "https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css";
+        estiloActual = 2;
+    } else {
+        hojaEstilo.href = ""; // Vuelve al estado sin estilos
+        estiloActual = 0;
+    }
+}
