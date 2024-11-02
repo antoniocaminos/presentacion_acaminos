@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Presentacion Antonio Caminos</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <h1>SQL</h1>
+        <h1>Clase Express de SQL</h1>
+            <nav>
+                <ul>
+                    <li><a href="#introduccion-sql">Introducción a SQL</a></li>
+                    <li><a href="#crear-tablas">Crear Tablas</a></li>
+                    <li><a href="#insertar-datos">Insertar Datos</a></li>
+                    <li><a href="#consultar-datos">Consultar Datos</a></li>
+                    <li><a href="#actualizar-datos">Actualizar y Eliminar Datos</a></li>
+                </ul>
+            </nav>
+
+            <section id="introduccion-sql">
+                <h3>Introducción a SQL</h3>
+                <p>SQL (Structured Query Language) es un lenguaje diseñado para gestionar y manipular bases de datos. Permite crear, leer, actualizar y eliminar datos en sistemas de bases de datos relacionales.</p>
+            </section>
+
+            <section id="crear-tablas">
+                <h3>Crear Tablas</h3>
+                <p>Para crear una tabla en SQL, usamos el comando <code>CREATE TABLE</code> seguido del nombre de la tabla y la definición de sus columnas.</p>
+                <pre>
+        &lt;code&gt;
+        CREATE TABLE Usuarios (
+            ID INT PRIMARY KEY,
+            Nombre VARCHAR(50),
+            Edad INT,
+            Email VARCHAR(100)
+        );
+        &lt;/code&gt;
+                </pre>
+            </section>
+
+            <section id="insertar-datos">
+                <h3>Insertar Datos</h3>
+                <p>Para insertar datos en una tabla, usamos <code>INSERT INTO</code> seguido del nombre de la tabla y los valores a agregar.</p>
+                <pre>
+        &lt;code&gt;
+        INSERT INTO Usuarios (ID, Nombre, Edad, Email) 
+        VALUES (1, 'Juan Pérez', 28, 'juan.perez@example.com');
+        &lt;/code&gt;
+                </pre>
+            </section>
+
+            <section id="consultar-datos">
+                <h3>Consultar Datos</h3>
+                <p>Para obtener datos de una tabla, usamos <code>SELECT</code> junto con el nombre de las columnas o <code>*</code> para seleccionar todas.</p>
+                <pre>
+        &lt;code&gt;
+        SELECT * FROM Usuarios;
+        &lt;/code&gt;
+                </pre>
+                <p>También podemos aplicar condiciones con <code>WHERE</code> para filtrar los resultados.</p>
+                <pre>
+        &lt;code&gt;
+        SELECT Nombre, Email FROM Usuarios WHERE Edad &gt; 18;
+        &lt;/code&gt;
+                </pre>
+            </section>
+
+            <section id="actualizar-datos">
+                <h3>Actualizar y Eliminar Datos</h3>
+                <p>Para actualizar datos, usamos <code>UPDATE</code> seguido de <code>SET</code> y luego <code>WHERE</code> para especificar los registros.</p>
+                <pre>
+        &lt;code&gt;
+        UPDATE Usuarios 
+        SET Email = 'nuevo.email@example.com' 
+        WHERE ID = 1;
+        &lt;/code&gt;
+                </pre>
+                <p>Para eliminar registros, usamos <code>DELETE FROM</code> seguido de <code>WHERE</code>.</p>
+                <pre>
+        &lt;code&gt;
+        DELETE FROM Usuarios WHERE ID = 1;
+        &lt;/code&gt;
+                </pre>
+            </section>
+        <br>
+        <a href="./index.html"><button>Volver al Indice</button></a>
+        <script src="" async defer></script>
+    </body>
+</html>

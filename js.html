@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Presentacion Antonio Caminos</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <h1>JavaScript</h1><br>
+        <p>JavaScript es un lenguaje de programación que se usa para agregar interactividad y dinamismo a las páginas web. <br>
+            A diferencia de HTML y CSS, que definen la estructura y el estilo visual de una página, JavaScript permite que los <br>
+            elementos de una página web respondan a las acciones de los usuarios (como hacer clic, mover el ratón o escribir texto)</p>
+        <br>
+        <h3>Conceptos Básicos de JavaScript</h3>
+        <p><em><i><b>Variables:</i></em></b>Crea una variable cuyo valor no puede cambiar (constante)</p>
+        <br>
+        <ol>
+            <li><i>let:</i>Crea una variable cuyo valor puede cambiar.</li>
+            <li><i>const:</i>Crea una variable cuyo valor no puede cambiar (constante)</li>
+            <li><i>var:</i>(poco usado hoy en día) una forma anterior de declarar variables, con algunas diferencias en su comportamiento.</li>
+        </ol>
+        <br>
+        <img src="./img/variables.png" alt="variables">
+        <br>
+        <p><i><em><b>Funciones:</em></i></b> Las funciones son bloques de código que pueden ejecutarse cuando se llaman. Permiten agrupar instrucciones para realizar tareas específicas.</p>
+            <br>
+            <img src="./img/funciones.png" alt="funciones"><br>
+            <br>
+            
+            <button onclick="mostrarMensaje()">Mostrar Mensaje</button><br>
+            <br>
+            <p><i><em><b>Eventos:</em></i></p></b> Los eventos en JavaScript son acciones que ocurren en la página, como hacer clic, pasar el ratón sobre un elemento o presionar una tecla. <br>
+            Podemos usar JavaScript para responder a estos eventos. <br>
+            <br>
+            <img src="./img/evento.png" alt="evento"><br>
+            <p><i><em><b>DOM (Document Object Model):</em></i></p></b> El DOM es una representación estructurada de una página web que permite a JavaScript <br>
+            interactuar con el HTML y cambiar contenido, estilos y atributos en tiempo real. <br>
+            <br>
+            <img src="./img/dom.png" alt="dom"><br>
+            <br>
+            <h2>Ejmplos:</h2>
+            
+            <br>
+            <p id="mi-texto">Texto inicial</p>
+            <button onclick="alternarTexto()">Cambiar Texto</button>
+            <br>
+            <br>
+            <div id="caja" style="width:100px; height:100px; background-color:lightblue;"></div><br>
+            <button onclick="cambiarColorAleatorio()">Cambiar Color</button>
+            <br>
+            <br>
+            <button onclick="pedirNombre()">ingresa tu Nombre</button>
+            <br>
+            <br>
+
+            
+
+            <a href="./index.html"><button>Volver al Indice</button></a><a href="./sql.html"><button>SQL</button></a>
+        <script src="./script.js" async defer></script>
+    </body>
+</html>
