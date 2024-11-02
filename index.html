@@ -10,23 +10,28 @@
     </head>
     <body>
         <!-- header --> 
-        <h1>Bienvevnidos a la clase, soy  Antonio Caminos y vamos a hacer nuestra primer pagina web en media hora o menos...(o mas o menos)</h1>
+        <div class="container">
+            <h1>Bienvevnidos a la clase, soy  Antonio Caminos y vamos a hacer nuestra primer pagina web en media hora o menos...(o mas o menos)</h1>
         <div id="introduccion">
             <h2>Introducción a HTML</h2>
             <p>HTML (HyperText Markup Language) es el lenguaje de marcado usado para estructurar el contenido en la web. Usamos etiquetas para definir diferentes tipos de contenido y estructura en una página.</p>
-            <p>Ejemplos de etiquetas básicas:</p>
-            <ul>
+            <nav>
+                <p>Ejemplos de etiquetas básicas:</p>
+            <ol>
                 <li>&lt;html&gt;: Define el documento como HTML.</li>
                 <li>&lt;head&gt;: Contiene información de configuración, como el título y enlaces a CSS o JavaScript.</li>
                 <li>&lt;title&gt;: Define el título de la página que aparece en la pestaña del navegador.</li>
                 <li>&lt;body&gt;: Contiene el contenido principal de la página, como texto, imágenes, videos, etc.</li>
                 <li>&lt;h1&gt; a &lt;h6&gt;: Son encabezados con diferentes niveles de importancia, siendo &lt;h1&gt; el más importante.</li>
                 <li>&lt;p&gt;: Define un párrafo de texto.</li>
-            </ul>
-            <img src="./img/html.png" alt="imagen de html">
+            </ol>
+            
+        </nav>
+        <img src="./img/html.png" alt="imagen de html">
             <p><i>fuente: <a href="https://www.w3schools.com/">https://www.w3schools.com/</a></i></p>
             </div>
-            <div id="tags">
+            <section>
+                <div id="tags">
                 <h2>Otras etiquetas:</h2><br>
                 &lt;br&gt;: Salto de línea (no tiene etiqueta de cierre).<br>
                 &lt;strong&gt;: Aplica énfasis en negrita (usualmente se muestra en negrita).<br>
@@ -37,29 +42,34 @@
                 &lt;ul&gt;: Lista desordenada (bullets).<br>
                 &lt;ol&gt;: Lista ordenada (números).<br>
                 &lt;li&gt;: Elemento de lista (usado dentro de &lt;ul&gt; o &lt;ol&gt;).<br>
-
+            </section>
+            <section>
                 <strong>Imágenes y multimedia:</strong><br>
                 &lt;img src=&quot;ruta-imagen.jpg&quot; alt=&quot;Descripción de la imagen&quot;&gt;: Inserta una imagen en la página. La etiqueta <code>alt</code> describe la imagen para accesibilidad.<br>
                 &lt;audio controls src=&quot;ruta-audio.mp3&quot;&gt;&lt;/audio&gt;: Inserta un reproductor de audio con controles.<br>
                 &lt;video controls width=&quot;320&quot; height=&quot;240&quot; src=&quot;ruta-video.mp4&quot;&gt;&lt;/video&gt;: Inserta un reproductor de video con controles.<br>
-
+            </section>
+                <section>
                 <strong>Enlaces:</strong><br>
                 &lt;a href=&quot;https://www.ejemplo.com&quot;&gt;Texto del enlace&lt;/a&gt;: Crea un enlace a otra página o recurso.<br>
                 &lt;a href=&quot;#seccion&quot;&gt;Enlace a una sección de la misma página&lt;/a&gt;: Crea un enlace a una sección específica dentro de la misma página usando un <code>id</code>.<br>
-
+            </section>
+            <section>
                 <strong>Tablas:</strong><br>
                 &lt;table&gt;: Define una tabla.<br>
                 &lt;tr&gt;: Define una fila de la tabla.<br>
                 &lt;th&gt;: Encabezado de la tabla (suele estar en la primera fila).<br>
                 &lt;td&gt;: Celda de datos de la tabla.<br>
                 &lt;caption&gt;: Título de la tabla.<br>
-
+            </section>
+            <section>
                 <strong>Formularios:</strong><br>
                 &lt;form&gt;: Define un formulario.<br>
                 &lt;input type=&quot;text&quot; name=&quot;nombre&quot; placeholder=&quot;Escribe tu nombre&quot;&gt;: Campo de texto para introducir datos.<br>
                 &lt;button type=&quot;submit&quot;&gt;Enviar&lt;/button&gt;: Botón para enviar el formulario.<br>
                 &lt;label for=&quot;email&quot;&gt;Correo:&lt;/label&gt;&lt;input type=&quot;email&quot; id=&quot;email&quot; name=&quot;email&quot;&gt;: Crea un campo de entrada de correo electrónico con un <code>label</code> asociado.<br>
-
+            </section>
+            <section>
                 <strong>Estructura y agrupación:</strong><br>
                 &lt;div&gt;: División de contenido. Se usa como contenedor para agrupar elementos.<br>
                 &lt;span&gt;: Contenedor en línea, útil para aplicar estilos a partes específicas de texto.<br>
@@ -68,17 +78,21 @@
                 &lt;section&gt;: Define una sección de contenido relacionada.<br>
                 &lt;article&gt;: Define un contenido independiente (como un artículo o post de blog).<br>
                 &lt;aside&gt;: Define contenido adicional (como una barra lateral).<br>
-
+            </section>  
+            <section>
                 <strong>Etiquetas Semánticas (HTML5):</strong><br>
                 &lt;main&gt;: Contenido principal de la página.<br>
                 &lt;nav&gt;: Define una sección de navegación, generalmente para enlaces.<br>
                 &lt;figure&gt;: Contenedor para imágenes con leyenda.<br>
                 &lt;figcaption&gt;: Leyenda para la imagen dentro de &lt;figure&gt;.
-
-                </div>
+            </section>
+                
                 <br>
+             
                 <a href="./css.html"><button class="boton">Siguiente</button></a><br><br>
                 <button onclick="alternarEstilos()">Cambiar Estilo</button>
+           </div>
+        </div>
         <script src="./script.js" async defer></script>
     </body>
 </html>
